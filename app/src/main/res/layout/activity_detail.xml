@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    tools:context=".DetailActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/showDetailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_default"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/randomChampionImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/startGl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/endGl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.9" />
+
+            <TextView
+                android:id="@+id/mostText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="많이 한 챔피언"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/summonerMostRv"
+                app:layout_constraintTop_toBottomOf="@id/randomChampionImg" />
+
+            <ImageView
+                android:id="@+id/searchSummonerTierImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toEndOf="@id/searchSummonerNameTv"
+                app:layout_constraintTop_toTopOf="@id/searchSummonerNameTv" />
+
+            <TextView
+                android:id="@+id/searchSummonerRankTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/searchSummonerTierImg"
+                app:layout_constraintTop_toTopOf="@id/searchSummonerTierImg" />
+
+            <Button
+                android:id="@+id/compareBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비교하기"
+                app:layout_constraintBottom_toBottomOf="@id/randomChampionImg"
+                app:layout_constraintStart_toStartOf="@id/startGl" />
+
+<!--            <Button-->
+<!--                android:id="@+id/ingameBtn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/button_enabled"-->
+<!--                android:text="인게임"-->
+<!--                app:layout_constraintBottom_toBottomOf="@id/randomChampionImg"-->
+<!--                app:layout_constraintEnd_toEndOf="@id/endGl" />-->
+
+            <TextView
+                android:id="@+id/searchSummonerPointTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/searchSummonerRankTv"
+                app:layout_constraintTop_toBottomOf="@id/searchSummonerRankTv" />
+
+            <TextView
+                android:id="@+id/searchSummonerLevelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/searchSummonerNameTv"
+                app:layout_constraintTop_toBottomOf="@id/searchSummonerNameTv" />
+
+            <ImageView
+                android:id="@+id/searchSummonerIconImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintStart_toStartOf="@id/startGl"
+                app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+            <TextView
+                android:id="@+id/searchSummonerNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@id/searchSummonerIconImg"
+                app:layout_constraintTop_toTopOf="@id/searchSummonerIconImg" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/summonerMostRv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@id/startGl"
+                app:layout_constraintTop_toBottomOf="@id/mostText" />
+
+            <com.dinuscxj.progressbar.CircleProgressBar
+                android:id="@+id/circleProgress"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:layout_constraintBottom_toBottomOf="@id/summonerMostRv"
+                app:layout_constraintEnd_toEndOf="@id/endGl"
+                app:layout_constraintTop_toTopOf="@id/summonerMostRv"
+                app:progress_end_color="#ABF200"
+                app:progress_start_color="#FFBB00"
+                app:progress_stroke_cap="round"
+                app:progress_stroke_width="5dp"
+                app:progress_text_size="40sp" />
+
+            <TextView
+                android:id="@+id/winloseTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/circleProgress"
+                app:layout_constraintEnd_toEndOf="@id/circleProgress"
+                app:layout_constraintStart_toStartOf="@id/circleProgress" />
+
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/userRv"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="@drawable/basic_bg"-->
+<!--                android:padding="10dp"-->
+<!--                android:visibility="gone"-->
+<!--                app:layout_constraintEnd_toEndOf="@id/endGl"-->
+<!--                app:layout_constraintStart_toStartOf="@id/startGl"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/randomChampionImg"-->
+<!--                tools:listitem="@layout/item_currentmatch" />-->
+
+            <TextView
+                android:id="@+id/recentGamesAvgTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="최근 20게임 평균"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/startGl"
+                app:layout_constraintTop_toBottomOf="@id/summonerMostRv" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/recentGamesAvgTv"
+                app:layout_constraintEnd_toEndOf="@id/endGl" />
+
+
+<!--            <com.google.android.material.tabs.TabLayout-->
+<!--                android:id="@+id/tabAvgLayout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/recentGamesAvgTv">-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+<!--            </com.google.android.material.tabs.TabLayout>-->
+
+<!--            <androidx.viewpager2.widget.ViewPager2-->
+<!--                android:id="@+id/vp2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="50dp"-->
+<!--                android:layout_marginBottom="50dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/tabAvgLayout" />-->
+
+            <com.github.mikephil.charting.charts.RadarChart
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/radarChart"
+                app:layout_constraintTop_toBottomOf="@id/recentGamesAvgTv"
+                app:layout_constraintBottom_toTopOf="@id/compareProBtn"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="프로와 비교하기"
+                android:id="@+id/compareProBtn"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

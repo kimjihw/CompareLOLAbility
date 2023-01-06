@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    tools:context=".DetailActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/randomChampionImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startGl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endGl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ImageView
+        android:id="@+id/searchSummonerTierImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/startGl"
+        app:layout_constraintTop_toBottomOf="@id/searchSummonerIconImg" />
+
+    <TextView
+        android:id="@+id/searchSummonerRankTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/searchSummonerTierImg"
+        app:layout_constraintTop_toTopOf="@id/searchSummonerTierImg" />
+
+    <TextView
+        android:id="@+id/searchSummonerPointTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/searchSummonerRankTv"
+        app:layout_constraintTop_toBottomOf="@id/searchSummonerRankTv" />
+
+    <TextView
+        android:id="@+id/winloseTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/searchSummonerNameTv"
+        app:layout_constraintTop_toBottomOf="@id/searchSummonerNameTv" />
+
+    <ImageView
+        android:id="@+id/searchSummonerIconImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@id/startGl"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/searchSummonerNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/searchSummonerIconImg"
+        app:layout_constraintTop_toTopOf="@id/searchSummonerIconImg" />
+
+
+    <ImageView
+        android:id="@+id/compareSummonerTierImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toStartOf="@id/compareSummonerRankTv"
+        app:layout_constraintTop_toBottomOf="@id/compareSummonerIconImg" />
+
+    <TextView
+        android:id="@+id/compareSummonerRankTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/compareSummonerNameTv"
+        app:layout_constraintTop_toTopOf="@id/compareSummonerTierImg" />
+
+    <TextView
+        android:id="@+id/compareSummonerPointTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/compareSummonerRankTv"
+        app:layout_constraintTop_toBottomOf="@id/compareSummonerRankTv" />
+
+    <TextView
+        android:id="@+id/compareWinLoseTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/compareSummonerNameTv"
+        app:layout_constraintTop_toBottomOf="@id/compareSummonerNameTv" />
+
+    <ImageView
+        android:id="@+id/compareSummonerIconImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toStartOf="@id/compareSummonerNameTv"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/compareSummonerNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/endGl"
+        app:layout_constraintTop_toTopOf="@id/compareSummonerIconImg" />
+
+    <Button
+        android:id="@+id/resetPro"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_baseline_replay_24"
+        app:layout_constraintEnd_toEndOf="@id/endGl"
+        app:layout_constraintTop_toBottomOf="@id/compareSummonerNameTv" />
+
+
+    <TextView
+        android:id="@+id/vsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS"
+        android:textColor="#44E0FF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/endGl"
+        app:layout_constraintStart_toStartOf="@id/startGl"
+        app:layout_constraintTop_toBottomOf="@id/searchSummonerTierImg" />
+
+    <LinearLayout
+        android:id="@+id/standardLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@id/vsText"
+        app:layout_constraintStart_toStartOf="@id/vsText"
+        app:layout_constraintTop_toBottomOf="@id/vsText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KDA" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="골드" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CS" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일반 와드" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제어 와드" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="딜량" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="힐량" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="더블킬" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="트리플킬" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="쿼드라킬" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="펜타킬" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myInfoRv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/standardLayout"
+        app:layout_constraintStart_toStartOf="@id/startGl"
+        app:layout_constraintTop_toBottomOf="@id/vsText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/standardLayout"
+        app:layout_constraintEnd_toEndOf="@id/endGl"
+        app:layout_constraintTop_toTopOf="@id/myInfoRv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/compareInfoRv"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "478476524741",
+    "project_id": "LolApiTest-b2d76",
+    "storage_bucket": "LolApiTest-b2d76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478476524741:android:6c5aec5bdb48315b61a4ac",
+        "android_client_info": {
+          "package_name": "kr.co.simplebestapp.LolApiTest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478476524741-ldfhcenophmjoaud22pat096nk7c518p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.co.simplebestapp.LolApiTest",
+            "certificate_hash": "0f452c67d09276d143c624b812599fc7d29b9f3b"
+          }
+        },
+        {
+          "client_id": "478476524741-jolnshelv119k6c1s4alis90lg2qe9f0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0irDdXCfEFDxMdn2GZTuBJpXHgtSNReo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478476524741-jolnshelv119k6c1s4alis90lg2qe9f0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

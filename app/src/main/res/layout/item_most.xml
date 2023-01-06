@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+    <ImageView
+        android:id="@+id/mostChampionImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mostChampionNameTv"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/mostChampionImg"
+        app:layout_constraintTop_toTopOf="@id/mostChampionImg" />
+
+    <TextView
+        android:id="@+id/mostChampionPointTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/mostChampionNameTv"
+        app:layout_constraintTop_toBottomOf="@id/mostChampionNameTv" />
+
+    <TextView
+        android:id="@+id/mostChampionLevelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/mostChampionPointTv"
+        app:layout_constraintTop_toTopOf="@id/mostChampionPointTv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

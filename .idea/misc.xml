@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/test/LolApiTest/app/src/main/res/drawable/basic_bg.xml" value="0.304" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/drawable/btn_disabled.xml" value="0.233" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/drawable/btn_enabled.xml" value="0.233" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/drawable/button_enabled.xml" value="0.233" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/drawable/favorite_click.xml" value="0.251" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/drawable/ripple_bg.xml" value="0.233" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/activity_compare.xml" value="0.22291666666666668" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/activity_config.xml" value="0.22291666666666668" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/activity_detail.xml" value="0.2" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/activity_intro.xml" value="0.22291666666666668" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/activity_main.xml" value="0.3619791666666667" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/fragment_compare_dialog.xml" value="0.2265625" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/fragment_gold.xml" value="0.2265625" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/fragment_k_d_a.xml" value="0.2265625" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/fragment_minion.xml" value="0.2265625" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/fragment_ward.xml" value="0.2265625" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/item_compare.xml" value="0.3619791666666667" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/item_currentmatch.xml" value="0.3619791666666667" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/item_history.xml" value="0.33" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/item_most.xml" value="0.3619791666666667" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/loading_dialog.xml" value="0.22291666666666668" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/toolbar_default.xml" value="0.3619791666666667" />
+        <entry key="..\:/test/LolApiTest/app/src/main/res/layout/toolbar_main.xml" value="0.2265625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

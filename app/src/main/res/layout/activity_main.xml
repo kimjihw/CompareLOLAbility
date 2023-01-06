@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/randomChampionImg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/inputNameEt"
+        app:layout_constraintEnd_toEndOf="@id/endGl"
+        app:layout_constraintStart_toStartOf="@id/startGl"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startGl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endGl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <EditText
+        android:id="@+id/inputNameEt"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="150dp"
+        android:background="@color/white"
+        android:hint="소환사명을 입력하세요"
+        android:paddingStart="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/endGl"
+        app:layout_constraintStart_toStartOf="@id/startGl"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/searchImg"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:src="@drawable/ic_baseline_search_24"
+        android:background="@drawable/ripple_bg"
+        app:layout_constraintBottom_toBottomOf="@id/inputNameEt"
+        app:layout_constraintEnd_toEndOf="@id/inputNameEt"
+        app:layout_constraintTop_toTopOf="@id/inputNameEt" />
+
+    <TextView
+        android:id="@+id/recentSearchTv"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:text="최근검색"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/endGl"
+        app:layout_constraintStart_toStartOf="@id/startGl"
+        app:layout_constraintTop_toBottomOf="@id/inputNameEt" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#4ed312"
+        app:layout_constraintEnd_toEndOf="@id/endGl"
+        app:layout_constraintStart_toStartOf="@id/startGl"
+        app:layout_constraintTop_toBottomOf="@id/recentSearchTv" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomGl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historyRv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="10dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/bottomGl"
+        app:layout_constraintEnd_toEndOf="@id/endGl"
+        app:layout_constraintStart_toStartOf="@id/startGl"
+        app:layout_constraintTop_toBottomOf="@id/line" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

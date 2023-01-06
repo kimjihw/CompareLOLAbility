@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#7775E3</color>
+    <color name="colorAccent2">#E6D8F8</color>
+    <color name="colorStatus">#f9f8fd</color>
+
+    <color name="colorLine">#D8DBF8</color>
+
+    <color name="colorTextLight">#ACA9BB</color>
+    <color name="colorTextDark">#474554</color>
+
+    <color name="colorSwitchActive">#7775E3</color>
+    <color name="colorSwitchInactive">#D8DBF8</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>

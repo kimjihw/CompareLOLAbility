@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">심플앱 기본</string>
+
+    <string name="config_title">설정</string>
+    <string name="config_notiTitle">노티바사용</string>
+    <string name="config_themeTitle">다크모드</string>
+    <string name="config_reviewTitle">리뷰를 남겨주세요</string>
+    <string name="config_recommendTitle">추천 부탁드립니다</string>
+    <string name="config_tutorialTitle">도움말</string>
+    <string name="config_customerTitle">문의하기</string>
+    <string name="config_versionTitle">버전</string>
+
+    <string name="comm_select">선택</string>
+    <string name="comm_alert">알림</string>
+    <string name="comm_confirm">확인</string>
+    <string name="comm_cnacel">취소</string>
+    <string name="comm_ok">네</string>
+    <string name="comm_finish">종료</string>
+    <string name="comm_move">1초 광고 보기</string>
+    <string name="comm_error">오류가 있습니다. 잠시후 다시 이용해 주시기 바랍니다.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="spinnerItem">
+        <item>솔로 랭크</item>
+        <item>자유 랭크</item>
+        <item>일반 게임</item>
+        <item>칼바람 나락</item>
+    </string-array>
+</resources>

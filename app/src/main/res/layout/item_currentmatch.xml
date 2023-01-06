@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/championImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/championImg" />
+
+    <ImageView
+        android:id="@+id/userFirstRuneImg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/championImg"
+        app:layout_constraintTop_toTopOf="@id/championImg" />
+
+    <ImageView
+        android:id="@+id/userSecondRuneImg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/championImg"
+        app:layout_constraintTop_toBottomOf="@id/userFirstRuneImg" />
+
+    <ImageView
+        android:id="@+id/userSpellDImg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/userFirstRuneImg"
+        app:layout_constraintTop_toTopOf="@id/championImg" />
+
+    <ImageView
+        android:id="@+id/userSpellFImg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/userSecondRuneImg"
+        app:layout_constraintTop_toBottomOf="@id/userSpellDImg" />
+
+    <ImageView
+        android:id="@+id/secondChampionImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@id/secondUserFirstRuneImg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/secondUserNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/secondChampionImg"
+        app:layout_constraintTop_toBottomOf="@id/secondChampionImg" />
+
+    <ImageView
+        android:id="@+id/secondUserFirstRuneImg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintEnd_toStartOf="@id/secondUserSpellDImg"
+        app:layout_constraintTop_toTopOf="@id/secondChampionImg" />
+
+    <ImageView
+        android:id="@+id/secondUserSecondRuneImg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintEnd_toStartOf="@id/secondUserSpellFImg"
+        app:layout_constraintTop_toBottomOf="@id/secondUserFirstRuneImg" />
+
+    <ImageView
+        android:id="@+id/secondUserSpellDImg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/secondChampionImg" />
+
+    <ImageView
+        android:id="@+id/secondUserSpellFImg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondUserSpellDImg" />
+
+<!--    <ImageView-->
+<!--        android:layout_width="25dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:src="@drawable/btn_open"-->
+<!--        app:layout_constraintStart_toEndOf="@id/userSpellDImg"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/secondChampionImg"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:id="@+id/openImg"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
